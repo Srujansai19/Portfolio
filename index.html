@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srujan Sai M — Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Manukonda Bhanu Srujan Sai — CSE student, full-stack developer & AI enthusiast at Malla Reddy University.">
+  <meta name="keywords" content="Srujan Sai, Developer, CSE, Java, Spring Boot, React, MERN, AI, ML, Portfolio">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Srujan Sai M — Developer Portfolio">
+  <meta property="og:description" content="Full-stack developer & AI/ML enthusiast. CSE undergraduate at Malla Reddy University (CGPA 8.36).">
+  <meta property="og:image"       content="assets/images/profile.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+<!-- ═══ Page Intro Loader ═══ -->
+<div id="site-loader" role="status" aria-label="Loading portfolio">
+  <div class="loader-inner">
+    <span class="loader-logo">&lt;S/&gt;</span>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <span class="loader-tagline">Crafting Experience&hellip;</span>
+  </div>
+</div>
+
+<!-- ═══ Gradient Mesh Background ═══ -->
+<div class="mesh-bg" aria-hidden="true">
+  <div class="mesh-blob mesh-blob-1"></div>
+  <div class="mesh-blob mesh-blob-2"></div>
+  <div class="mesh-blob mesh-blob-3"></div>
+  <div class="mesh-blob mesh-blob-4"></div>
+</div>
+
+<!-- ═══ Scroll Progress Bar ═══ -->
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ══════════════ NAVIGATION ══════════════ -->
+<header class="header" role="banner">
+  <div class="container">
+    <a href="#home" class="logo" aria-label="Home">
+      <span class="logo-bracket">&lt;</span>Srujan<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+    </a>
+
+    <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" class="nav-btn" download aria-label="Download Resume">
+        Resume <i class="fas fa-arrow-down-to-line"></i>
+      </a>
+    </nav>
+
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav overlay -->
+<nav class="nav-mobile" aria-label="Mobile navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#contact">Contact</a>
+  <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="home" class="hero" aria-label="Introduction">
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <!-- Left: Text -->
+    <div class="hero-text reveal left">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Open to Opportunities
+      </div>
+
+      <h1 class="hero-name">
+        Manukonda<br>
+        <span class="g-text">Srujan Sai</span>
+      </h1>
+
+      <p class="hero-roles">
+        A&nbsp;<span id="tw-el"
+          data-words='["CSE Undergraduate","Full-Stack Developer","AI / ML Enthusiast","MERN Stack Builder","Problem Solver","Spring Boot Engineer"]'
+          data-wait="2800"></span><span class="cursor-blink"></span>
+      </p>
+
+      <p class="hero-tagline">
+        I build robust backend systems, interactive web applications, and IoT-driven intelligence —
+        turning complex problems into elegant digital solutions.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary magnetic">
+          View Projects <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="assets/resume.pdf" class="btn btn-ghost magnetic" download>
+          Download CV <i class="fas fa-file-arrow-down"></i>
+        </a>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+
+    <!-- Right: Animated Developer Avatar -->
+    <div class="hero-avatar-col reveal right d2">
+      <div class="avatar-scene">
+        <!-- Ambient halo -->
+        <div class="avatar-halo"></div>
+
+        <!-- Orbit rings -->
+        <div class="orbit-ring orbit-ring-1" aria-hidden="true"></div>
+        <div class="orbit-ring orbit-ring-2" aria-hidden="true"></div>
+        <div class="orbit-ring orbit-ring-3" aria-hidden="true"></div>
+
+        <!-- Central orb -->
+        <div class="avatar-core">
+          <div class="avatar-code-lines" aria-hidden="true">
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+          </div>
+          <span class="avatar-core-inner">S/</span>
+        </div>
+
+        <!-- Orbiting tech nodes -->
+        <div class="orbit-node n1" title="Java"><i class="devicon-java-plain" style="color:#f89820"></i></div>
+        <div class="orbit-node n2" title="React"><i class="devicon-react-original" style="color:#61dafb"></i></div>
+        <div class="orbit-node n3" title="Python"><i class="devicon-python-plain" style="color:#3b82f6"></i></div>
+        <div class="orbit-node n4" title="Node.js"><i class="devicon-nodejs-plain" style="color:#6cc24a"></i></div>
+        <div class="orbit-node n5" title="Spring Boot"><i class="devicon-spring-plain" style="color:#6db33f"></i></div>
+        <div class="orbit-node n6" title="MongoDB"><i class="devicon-mongodb-plain" style="color:#13aa52"></i></div>
+        <div class="orbit-node n7" title="GitHub"><i class="fa-brands fa-github" style="color:#e2e8f0"></i></div>
+        <div class="orbit-node n8" title="MySQL"><i class="devicon-mysql-plain" style="color:#00758f"></i></div>
+
+        <!-- Floating stat chips -->
+        <div class="avatar-chips left">
+          <div class="chip"><span class="chip-dot">●</span> CGPA 8.36</div>
+          <div class="chip"><span class="chip-dot">●</span> MERN Stack</div>
+        </div>
+        <div class="avatar-chips right">
+          <div class="chip"><span class="chip-dot">●</span> 15+ Certs</div>
+          <div class="chip"><span class="chip-dot">●</span> AI / ML</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee Divider 1: Hero → About -->
+<div class="marquee-divider" aria-hidden="true">
+  <div class="marquee-track ltr">
+    <span class="marquee-item">Java</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Spring Boot</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">React.js</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Node.js</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">MongoDB</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Python</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Machine Learning</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Flask</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">MySQL</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">WebSockets</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">REST APIs</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">IoT</span><span class="marquee-item dot">&middot;</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Java</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Spring Boot</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">React.js</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Node.js</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">MongoDB</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Python</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Machine Learning</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Flask</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">MySQL</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">WebSockets</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">REST APIs</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">IoT</span><span class="marquee-item dot">&middot;</span>
+  </div>
+</div>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about" aria-label="About Me">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Profile image -->
+      <div class="reveal left">
+        <div class="about-img-wrap">
+          <div class="about-badge-tl">🎓 B.Tech CSE</div>
+          <div class="about-img-frame">
+            <img src="assets/images/profile.jpg" alt="Manukonda Bhanu Srujan Sai" loading="lazy">
+          </div>
+          <div class="about-badge-br">📍 Hyderabad, India</div>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="about-bio reveal right d2">
+        <div class="sec-label">About Me</div>
+        <h2 class="sec-title">Builder at Heart, <br><span class="g-text">Engineer by Craft</span></h2>
+        <p>
+          I'm <strong>Manukonda Bhanu Srujan Sai</strong>, a Computer Science undergraduate at
+          <strong>Malla Reddy University, Hyderabad</strong> (Class of 2027), maintaining a CGPA of
+          <strong>8.36</strong>. I combine a strong theoretical foundation with hands-on
+          engineering discipline to ship products that are both meaningful and efficient.
+        </p>
+        <p>
+          My work spans scalable <strong>Java Spring Boot backends</strong>, real-time
+          <strong>MERN stack</strong> applications, and <strong>IoT + ML</strong> systems.
+          Two industry internships — at <strong>Infosys Springboard</strong> and
+          <strong>IBM SkillsBuild</strong> — sharpened my skills in AI pipelines, cloud deployments,
+          and agile delivery.
+        </p>
+
+        <div class="about-stats">
+          <div class="card stat-box">
+            <span class="stat-num g-text"
+              data-count="8.36"
+              data-decimals="2"
+              data-suffix=""
+              data-duration="1600">8.36</span>
+            <span class="stat-lbl">B.Tech CGPA</span>
+          </div>
+          <div class="card stat-box">
+            <span class="stat-num g-text"
+              data-count="3"
+              data-decimals="0"
+              data-suffix="+"
+              data-duration="1200">3+</span>
+            <span class="stat-lbl">Live Projects</span>
+          </div>
+          <div class="card stat-box">
+            <span class="stat-num g-text"
+              data-count="15"
+              data-decimals="0"
+              data-suffix="+"
+              data-duration="1400">15+</span>
+            <span class="stat-lbl">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee Divider 2: About → Skills (RTL) -->
+<div class="marquee-divider" aria-hidden="true">
+  <div class="marquee-track rtl">
+    <span class="marquee-item">Full-Stack Development</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Backend Engineering</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">AI &amp; Machine Learning</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">IoT Systems</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Database Design</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">REST APIs</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Cloud Services</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Data Analytics</span><span class="marquee-item dot">&middot;</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Full-Stack Development</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Backend Engineering</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">AI &amp; Machine Learning</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">IoT Systems</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Database Design</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">REST APIs</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Cloud Services</span><span class="marquee-item dot">&middot;</span>
+    <span class="marquee-item">Data Analytics</span><span class="marquee-item dot">&middot;</span>
+  </div>
+</div>
+
+<!-- ══════════════ SKILLS ══════════════ -->
+<section id="skills" class="skills-bg" aria-label="Technical Skills">
+  <div class="container">
+    <div class="sec-header center reveal">
+      <span class="sec-label">Competencies</span>
+      <h2 class="sec-title">Technical Skills</h2>
+      <p class="sec-desc">
+        Technologies I've worked with — from backend systems and web interfaces to databases, data tools, and AI pipelines.
+      </p>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="skills-tabs reveal d2" role="tablist" aria-label="Skill categories">
+      <button class="s-tab active" data-tab="languages" role="tab" aria-selected="true">Languages</button>
+      <button class="s-tab" data-tab="web"       role="tab" aria-selected="false">Web & Frameworks</button>
+      <button class="s-tab" data-tab="data"      role="tab" aria-selected="false">Data & AI</button>
+      <button class="s-tab" data-tab="tools"     role="tab" aria-selected="false">Tools & Cloud</button>
+    </div>
+
+    <!-- Panel: Languages -->
+    <div class="skills-panel shown tech-grid reveal d3" data-panel="languages" role="tabpanel">
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-java-plain" style="color:#f89820"></i></span><span class="tech-name">Java</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-python-plain" style="color:#3b82f6"></i></span><span class="tech-name">Python</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-javascript-plain" style="color:#f7df1e"></i></span><span class="tech-name">JavaScript</span></div>
+
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-html5-plain" style="color:#e34f26"></i></span><span class="tech-name">HTML5</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-css3-plain" style="color:#1572b6"></i></span><span class="tech-name">CSS3</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-r-plain" style="color:#276dc3"></i></span><span class="tech-name">R</span></div>
+    </div>
+
+    <!-- Panel: Web & Frameworks -->
+    <div class="skills-panel tech-grid" data-panel="web" role="tabpanel">
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-spring-plain" style="color:#6db33f"></i></span><span class="tech-name">Spring Boot</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-react-original" style="color:#61dafb"></i></span><span class="tech-name">React.js</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-nodejs-plain" style="color:#6cc24a"></i></span><span class="tech-name">Node.js</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-express-original" style="color:#e2e8f0"></i></span><span class="tech-name">Express.js</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-flask-original" style="color:#e2e8f0"></i></span><span class="tech-name">Flask</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-redux-original" style="color:#764abc"></i></span><span class="tech-name">Redux</span></div>
+    </div>
+
+    <!-- Panel: Data & AI -->
+    <div class="skills-panel tech-grid" data-panel="data" role="tabpanel">
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-pandas-original" style="color:#130654"></i></span><span class="tech-name">Pandas</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-numpy-original" style="color:#4dabcf"></i></span><span class="tech-name">NumPy</span></div>
+      <div class="tech-item"><span class="tech-icon">🤖</span><span class="tech-name">Machine Learning</span></div>
+      <div class="tech-item"><span class="tech-icon">🧠</span><span class="tech-name">Deep Learning</span></div>
+      <div class="tech-item"><span class="tech-icon">🗣️</span><span class="tech-name">NLP</span></div>
+      <div class="tech-item"><span class="tech-icon">✨</span><span class="tech-name">Generative AI</span></div>
+      <div class="tech-item"><span class="tech-icon">👁️</span><span class="tech-name">Computer Vision</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-tableau-original" style="color:#0091d3"></i></span><span class="tech-name">Tableau</span></div>
+    </div>
+
+    <!-- Panel: Tools & Cloud -->
+    <div class="skills-panel tech-grid" data-panel="tools" role="tabpanel">
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-mysql-plain" style="color:#00758f"></i></span><span class="tech-name">MySQL</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-mongodb-plain" style="color:#13aa52"></i></span><span class="tech-name">MongoDB</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-git-plain" style="color:#f05032"></i></span><span class="tech-name">Git</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-github-original" style="color:#e2e8f0"></i></span><span class="tech-name">GitHub</span></div>
+      <div class="tech-item"><span class="tech-icon">☁️</span><span class="tech-name">IBM Cloud</span></div>
+      <div class="tech-item"><span class="tech-icon">📊</span><span class="tech-name">Power BI</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-vscode-plain" style="color:#007acc"></i></span><span class="tech-name">VS Code</span></div>
+      <div class="tech-item"><span class="tech-icon"><i class="devicon-intellij-plain" style="color:#fe315d"></i></span><span class="tech-name">IntelliJ</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ PROJECTS ══════════════ -->
+<section id="projects" aria-label="Projects">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-label">Featured Work</span>
+      <h2 class="sec-title">Projects I've Built</h2>
+      <p class="sec-desc">Selected projects that reflect my engineering thinking, design sensibility, and problem-solving approach.</p>
+    </div>
+
+    <div class="proj-filters reveal d2">
+      <button class="pf-btn active" data-filter="all">All</button>
+      <button class="pf-btn" data-filter="web">Web Apps</button>
+      <button class="pf-btn" data-filter="ai-iot">AI & IoT</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- SmartLot -->
+      <div class="card proj-card reveal d2" data-cat="ai-iot">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(16,185,129,0.28),rgba(6,182,212,0.18))"></div>
+          <span class="proj-thumb-icon">🅿️</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-cat">IoT + Machine Learning</span>
+          <h3 class="proj-title">SmartLot</h3>
+          <p class="proj-desc">An <strong>IoT-enabled smart parking monitor</strong> providing real-time bay availability and an ML model predicting occupancy demand with 85% accuracy — reducing urban road congestion.</p>
+          <div class="proj-tags">
+            <span class="p-tag">Python</span><span class="p-tag">IoT</span>
+            <span class="p-tag">Machine Learning</span><span class="p-tag">MongoDB</span>
+            <span class="p-tag">Flask</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://github.com/Srujansai19" class="proj-link" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <span class="proj-link disabled"><i class="fas fa-arrow-up-right-from-square"></i> Live Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Streamify -->
+      <div class="card proj-card reveal d3" data-cat="web">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(6,182,212,0.28),rgba(124,58,237,0.18))"></div>
+          <span class="proj-thumb-icon">🎙️</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-cat">Real-Time Application</span>
+          <h3 class="proj-title">Streamify</h3>
+          <p class="proj-desc">A peer-to-peer <strong>chat &amp; video calling</strong> platform with WebSocket-powered zero-latency messaging, real-time video via WebRTC, and secure JWT-based authentication.</p>
+          <div class="proj-tags">
+            <span class="p-tag">React.js</span><span class="p-tag">Node.js</span>
+            <span class="p-tag">MongoDB</span><span class="p-tag">WebSockets</span>
+            <span class="p-tag">WebRTC</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://github.com/Srujansai19" class="proj-link" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <span class="proj-link disabled"><i class="fas fa-arrow-up-right-from-square"></i> Live Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- QuickBill -->
+      <div class="card proj-card reveal d4" data-cat="web">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(124,58,237,0.28),rgba(245,158,11,0.18))"></div>
+          <span class="proj-thumb-icon">🧾</span>
+        </div>
+        <div class="proj-body">
+          <span class="proj-cat">Web Application</span>
+          <h3 class="proj-title">QuickBill</h3>
+          <p class="proj-desc">A full-featured <strong>supermarket management system</strong> automating billing, inventory tracking and sales reporting with role-based access control and secure REST APIs.</p>
+          <div class="proj-tags">
+            <span class="p-tag">Java</span><span class="p-tag">Spring Boot</span>
+            <span class="p-tag">MySQL</span><span class="p-tag">REST APIs</span>
+            <span class="p-tag">JWT Auth</span>
+          </div>
+          <div class="proj-footer">
+            <a href="https://github.com/Srujansai19" class="proj-link" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> Repository
+            </a>
+            <span class="proj-link disabled"><i class="fas fa-arrow-up-right-from-square"></i> Live Soon</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TIMELINE ══════════════ -->
+<section id="timeline" class="timeline-section" aria-label="Experience and Timeline">
+  <div class="container">
+    <div class="sec-header center reveal">
+      <span class="sec-label">My Journey</span>
+      <h2 class="sec-title">Experience &amp; Milestones</h2>
+      <p class="sec-desc">Education, industry internships, and achievements that have shaped my engineering journey so far.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item tl-left reveal left d1">
+        <div class="tl-node"></div>
+        <div class="card tl-card">
+          <span class="tl-date">2023 – 2027</span>
+          <h3>B.Tech — Computer Science & Engineering</h3>
+          <span class="tl-sub">Malla Reddy University, Hyderabad</span>
+          <p>Building a strong CS foundation across algorithms, OOP, databases, operating systems, and software engineering. Current CGPA: <strong>8.36</strong>.</p>
+        </div>
+      </div>
+
+      <div class="tl-item tl-right reveal right d2">
+        <div class="tl-node"></div>
+        <div class="card tl-card">
+          <span class="tl-date">AI/ML Internship</span>
+          <h3>Infosys Springboard 6.0</h3>
+          <span class="tl-sub">2-Month Industry Internship</span>
+          <p>Trained in supervised & unsupervised ML, deep learning, NLP, computer vision, and agile practices. Worked on real-world classification and automation use-cases.</p>
+        </div>
+      </div>
+
+      <div class="tl-item tl-left reveal left d1">
+        <div class="tl-node"></div>
+        <div class="card tl-card">
+          <span class="tl-date">AI & Cloud Internship</span>
+          <h3>IBM SkillsBuild</h3>
+          <span class="tl-sub">4-Week AICTE Internship</span>
+          <p>Worked with Generative AI models (GPT-3, Granite, LangChain), IBM Cloud deployments, and earned credentials in AI Primer, Generative AI, and Cloud Essentials.</p>
+        </div>
+      </div>
+
+      <div class="tl-item tl-right reveal right d2">
+        <div class="tl-node"></div>
+        <div class="card tl-card">
+          <span class="tl-date">Competitive</span>
+          <h3>Flipkart GRiD 6.0</h3>
+          <span class="tl-sub">Software Development Track — Level 1 Qualified</span>
+          <p>Competed nationally against thousands of engineering students in computer science aptitude, algorithmic problem-solving, and software engineering depth.</p>
+        </div>
+      </div>
+
+      <div class="tl-item tl-left reveal left d1">
+        <div class="tl-node"></div>
+        <div class="card tl-card">
+          <span class="tl-date">Industry Simulations & Certifications</span>
+          <h3>Professional Credentials</h3>
+          <span class="tl-sub">Multi-Domain Certification Portfolio</span>
+          <div class="cert-chips">
+            <span class="cert-chip"><i class="fas fa-award"></i>Google AI/ML — EduSkills</span>
+            <span class="cert-chip"><i class="fas fa-award"></i>Accenture Software Engineering</span>
+            <span class="cert-chip"><i class="fas fa-award"></i>Deloitte Data Analytics</span>
+            <span class="cert-chip"><i class="fas fa-award"></i>British Airways Data Science</span>
+            <span class="cert-chip"><i class="fas fa-award"></i>Tata AI-Powered Analytics</span>
+            <span class="cert-chip"><i class="fas fa-award"></i>PwC PowerBI Analytics</span>
+            <span class="cert-chip"><i class="fas fa-award"></i>IBM SQL & Relational Databases</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact" aria-label="Contact">
+  <div class="container">
+    <div class="sec-header center reveal">
+      <span class="sec-label">Get In Touch</span>
+      <h2 class="sec-title">Let's Connect</h2>
+      <p class="sec-desc">Open to internships, collaborative projects, and full-time developer positions. Drop me a message and I'll respond within 24 hours.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info reveal left">
+        <h3>I'd love to hear from you</h3>
+        <p>Whether it's a project idea, a job opportunity, or just to connect &mdash; don't hesitate to reach out.</p>
+
+        <!-- Availability -->
+        <div class="contact-avail">
+          <div class="avail-badge">
+            <span class="avail-dot"></span>
+            Currently Available
+          </div>
+          <div class="avail-roles">
+            <span class="avail-role">Internships</span>
+            <span class="avail-role">Freelance</span>
+            <span class="avail-role">Full-time</span>
+            <span class="avail-role">Collaborations</span>
+          </div>
+          <p class="response-note">
+            <i class="fas fa-bolt"></i>Usually responds within 24 hours
+          </p>
+        </div>
+
+        <div class="c-item">
+          <div class="c-icon"><i class="fas fa-envelope"></i></div>
+          <div class="c-detail">
+            <span>Email</span>
+            <a href="mailto:srujansaim04@gmail.com">srujansaim04@gmail.com</a>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><i class="fas fa-phone"></i></div>
+          <div class="c-detail">
+            <span>Phone</span>
+            <a href="tel:+919700276369">+91 97002 76369</a>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon"><i class="fas fa-location-dot"></i></div>
+          <div class="c-detail">
+            <span>Location</span>
+            <p>Hyderabad, Telangana, India</p>
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/srujan19" class="soc-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Srujansai19" class="soc-btn" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:srujansaim04@gmail.com" class="soc-btn" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="card c-form reveal right d2">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="f-name">Full Name</label>
+            <input type="text" id="f-name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="f-email">Email Address</label>
+            <input type="email" id="f-email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-row">
+            <label for="f-subject">Subject</label>
+            <input type="text" id="f-subject" placeholder="What's it about?" required>
+          </div>
+          <div class="form-row">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" placeholder="Your message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <div id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <!-- Closing CTA -->
+    <div class="footer-cta-section">
+      <p class="footer-cta-text">
+        Let's build something
+        <span class="g-text">great.</span>
+      </p>
+      <p class="footer-cta-sub">Open to opportunities &mdash; let's create something meaningful together.</p>
+      <a href="#contact" class="btn btn-primary">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Srujan<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/srujan19" class="soc-btn soc-sm" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Srujansai19" class="soc-btn soc-sm" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+    <p class="footer-made">
+      Made with <span class="heart">&hearts;</span> in Hyderabad
+      &nbsp;&middot;&nbsp;
+      &copy; 2026 Manukonda Bhanu Srujan Sai
+    </p>
+
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/loader.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/scroll-reveal.js"></script>
+<script src="js/counters.js"></script>
+<script src="js/tilt.js"></script>
+<script src="js/text-reveal.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
